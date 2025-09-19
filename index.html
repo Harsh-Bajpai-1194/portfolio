@@ -9,86 +9,42 @@
 </head>
 <body>
 
-<header>
-  <h1>Harsh Bajpai</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<div class="hero">
+  <img src="profile.jpg" alt="Harsh Bajpai" class="profile-pic">
 
-<main>
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I’m a Computer Science Engineering student passionate about <strong>web development, algorithms, and problem-solving</strong>. I enjoy building projects that make an impact and constantly explore new technologies.</p>
-  </section>
+  <h1>Hi, I'm <span class="highlight">Harsh Bajpai</span> 👋</h1>
+  <p class="subtitle">Computer Science Engineer | Programmer | Web Developer | Tech Enthusiast</p>
 
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Python, C, JavaScript</div>
-      <div class="skill-card">HTML, CSS, React.js</div>
-      <div class="skill-card">MongoDB, SQL</div>
-      <div class="skill-card">Git, GitHub, VS Code</div>
-    </div>
-  </section>
+  <h2>Technologies</h2>
+  <div class="tech-grid">
+    <div class="tech-card">⚡ Python <span class="tag good">Good</span></div>
+    <div class="tech-card">⚡ C <span class="tag good">Good</span></div>
+    <div class="tech-card">⚡ JavaScript <span class="tag pro">Pro</span></div>
+    <div class="tech-card">⚡ HTML <span class="tag pro">Pro</span></div>
+    <div class="tech-card">⚡ CSS <span class="tag pro">Pro</span></div>
+    <div class="tech-card">⚡ React.js <span class="tag good">Good</span></div>
+    <div class="tech-card">⚡ SQL <span class="tag good">Good</span></div>
+    <div class="tech-card">⚡ MongoDB <span class="tag good">Good</span></div>
+  </div>
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3><a href="https://github.com/yourusername/NimbusCast" target="_blank">ZERYTHRON</a></h3>
-        <p>A modified E-waste management platform.</p>
-      </div>
-      <div class="project-card">
-        <h3><a href="https://github.com/yourusername/ZYROGAURD" target="_blank">ZYROGAURD</a></h3>
-        <p>Awareness platform on digital safety.</p>
-      </div>
-      <div class="project-card">
-        <h3><a href="https://github.com/yourusername/AlumniPlatform" target="_blank">Alumni Platform</a></h3>
-        <p>Connects alumni and students.</p>
-      </div>
-      <div class="project-card">
-        <h3><a href="https://github.com/yourusername/SpotifyClone" target="_blank">Spotify Clone</a></h3>
-        <p>A functional clone of Spotify web UI.</p>
-      </div>
-    </div>
-  </section>
+  <h2>Socials</h2>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/harsh-bajpai1194/" class="badge linkedin">LinkedIn</a>
+    <a href="https://github.com/Harsh-Bajpai-1194" class="badge github">GitHub</a>
+    <a href="https://leetcode.com/u/Harsh_Bajpai1/" class="badge leetcode">LeetCode</a>
+    <a href="mailto:harshbajpai1194@gmail.com" class="badge email">Email</a>
+  </div>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:harshbajpai1194@gmail.com">harshbajpai1194@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/Harsh-Bajpai-1194" target="_blank">github.com/Harsh-Bajpai-1194</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/harsh-bajpai1194/" target="_blank">linkedin.com/in/harsh-bajpai1194</a></li>
-      <li>LeetCode: <a href="https://leetcode.com/u/Harsh_Bajpai1/" target="_blank">Harsh_Bajpai1</a></li>
-    </ul>
-  </section>
-</main>
+  <div class="cta-buttons">
+    <a href="#projects" class="btn">Projects</a>
+    <a href="#contact" class="btn">Hire</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
+</div>
 
 <footer>
   <p>© 2025 Harsh Bajpai</p>
 </footer>
-
-<script>
-  // Simple fade-in on scroll
-  const faders = document.querySelectorAll('.fade-in');
-  const options = { threshold: 0.2 };
-  const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, options);
-
-  faders.forEach(fader => {
-    observer.observe(fader);
-  });
-</script>
 
 </body>
 </html>
