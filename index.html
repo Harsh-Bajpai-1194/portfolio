@@ -1,96 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsh Bajpai</title>
-  <link rel="stylesheet" href="style.css">
-  <img class="avatar" src="1743093681930.jpg" alt="profile">
+  <title>Harsh Bajpai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #222;
+      --card-bg: #fff;
+      --accent: #4CAF50;
+      --badge-pro: gold;
+      --badge-good: #8d6efd;
+    }
+    body.dark {
+      --bg-color: #1e1e1e;
+      --text-color: #eee;
+      --card-bg: #2c2c2c;
+      --accent: #81c784;
+      --badge-pro: #ffeb3b;
+      --badge-good: #9575cd;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero { padding: 3rem 2rem; }
+    .avatar {
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .highlight { color: var(--accent); }
+    .subtitle { font-size: 1rem; margin-bottom: 2rem; opacity: 0.8; }
+
+    h2 { margin: 2rem 0 1rem; font-size: 1.3rem; }
+
+    .tech-grid {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 1rem; margin-bottom: 2rem;
+    }
+    .tech-card {
+      background: var(--card-bg);
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: 500;
+      display: flex; align-items: center; gap: 0.5rem;
+      transition: background 0.3s;
+    }
+    .tech-card img { width: 22px; height: 22px; }
+    .tag {
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .tag.pro { background: var(--badge-pro); color: #333; }
+    .tag.good { background: var(--badge-good); color: #fff; }
+
+    .socials {
+      display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: flex; align-items: center; gap: 0.4rem;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .badge img { width: 20px; height: 20px; }
+    .badge:hover { opacity: 0.8; }
+    .linkedin { background: #0077b5; }
+    .github { background: #333; }
+    .leetcode { background: #f89f1b; }
+    .email { background: #d93025; }
+
+    .cta-buttons {
+      display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;
+    }
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #43a047; }
+
+    .toggle-theme {
+      cursor: pointer;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Theme Toggle -->
-  <div class="theme-toggle">
-    <span>🌙</span>
-    <label class="switch">
-      <input type="checkbox" id="theme-switch">
-      <span class="slider"></span>
-    </label>
-    <span>☀️</span>
+
+<div class="hero">
+  <img src="1743093681930.jpg" alt="Harsh Bajpai" class="avatar">
+
+  <h1>Hi, I'm <span class="highlight">Harsh Bajpai</span> 👋</h1>
+  <p class="subtitle">Computer Science Engineer | Programmer | Web Developer | Tech Enthusiast</p>
+
+  <h2>Technologies</h2>
+  <div class="tech-grid">
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python <span class="tag good">Good</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"> C <span class="tag good">Good</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"> JavaScript <span class="tag pro">Pro</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> HTML <span class="tag pro">Pro</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"> CSS <span class="tag pro">Pro</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"> React.js <span class="tag good">Good</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> SQL <span class="tag good">Good</span></div>
+    <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"> MongoDB <span class="tag good">Good</span></div>
   </div>
 
-  <div class="container">
-    <img class="avatar" src="https://www.gravatar.com/avatar/847f8b56766426779ae8864f47a29359?size=200" alt="profile">
-    <div class="text-large">Hi, I'm Harsh Bajpai 👋</div>
-    <div class="text-normal">Computer Science Engineer | Programmer | Tech Enthusiast</div>
-
-    <!-- Technologies -->
-    <div class="section-text">Technologies</div>
-    <div class="techs">
-      <a href="#" class="tech" target="_blank" title="Python">
-        <img src="https://img.icons8.com/color/96/python--v1.png" alt="python">
-        <div class="level good"><img src="https://img.icons8.com/emoji/30/thumbs-up.png"/> Good</div>
-      </a>
-      <a href="#" class="tech" target="_blank" title="JavaScript">
-        <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript">
-        <div class="level pro"><img src="https://img.icons8.com/office/30/filled-star--v1.png"/> Pro</div>
-      </a>
-      <a href="#" class="tech" target="_blank" title="HTML">
-        <img src="https://img.icons8.com/fluency/96/html-5.png" alt="html">
-        <div class="level pro"><img src="https://img.icons8.com/office/30/filled-star--v1.png"/> Pro</div>
-      </a>
-      <a href="#" class="tech" target="_blank" title="CSS">
-        <img src="https://img.icons8.com/color/96/css3.png" alt="css">
-        <div class="level pro"><img src="https://img.icons8.com/office/30/filled-star--v1.png"/> Pro</div>
-      </a>
-      <a href="#" class="tech" target="_blank" title="ReactJS">
-        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/60/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="react">
-        <div class="level good"><img src="https://img.icons8.com/emoji/30/thumbs-up.png"/> Good</div>
-      </a>
-      <a href="#" class="tech" target="_blank" title="SQL">
-        <img src="https://img.icons8.com/ios-filled/50/database.png" alt="sql">
-        <div class="level good"><img src="https://img.icons8.com/emoji/30/thumbs-up.png"/> Good</div>
-      </a>
-    </div>
-
-    <!-- Socials -->
-    <div class="section-text">Socials</div>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/harsh-bajpai1194/" target="_blank" class="social">
-        <img src="https://www.svgrepo.com/show/157006/linkedin.svg" alt="linkedin">
-        <div class="username ln">Harsh Bajpai</div>
-      </a>
-      <a href="https://github.com/Harsh-Bajpai-1194" target="_blank" class="social">
-        <img src="https://img.icons8.com/fluency/50/github.png" alt="github">
-        <div class="username gh">@Harsh-Bajpai-1194</div>
-      </a>
-      <a href="https://leetcode.com/u/Harsh_Bajpai1/" target="_blank" class="social">
-        <img src="https://img.icons8.com/ios-filled/50/source-code.png" alt="leetcode">
-        <div class="username lc">LeetCode</div>
-      </a>
-      <a href="mailto:harshbajpai1194@gmail.com" target="_blank" class="social">
-        <img src="https://img.icons8.com/fluency/48/gmail-new.png" alt="email">
-        <div class="username mail">Email</div>
-      </a>
-    </div>
-
-    <!-- Navigation -->
-    <div class="section-text">More Options</div>
-    <div class="navigation">
-      <a class="nav-item">Projects</a>
-      <a href="mailto:harshbajpai1194@gmail.com" class="nav-item">Hire</a>
-      <a href="mailto:harshbajpai1194@gmail.com" class="nav-item">Contact</a>
-    </div>
+  <h2>Socials</h2>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/harsh-bajpai1194/" class="badge linkedin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"> LinkedIn</a>
+    <a href="https://github.com/Harsh-Bajpai-1194" class="badge github"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"> GitHub</a>
+    <a href="https://leetcode.com/u/Harsh_Bajpai1/" class="badge leetcode"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg"> LeetCode</a>
+    <a href="mailto:harshbajpai1194@gmail.com" class="badge email"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"> Email</a>
   </div>
 
-  <footer>© 2025 Harsh Bajpai</footer>
+  <div class="cta-buttons">
+    <a href="#projects" class="btn">Projects</a>
+    <a href="#contact" class="btn">Hire</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
 
-  <script>
-    const themeSwitch = document.getElementById('theme-switch');
-    themeSwitch.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Toggle Dark/Light</button>
+</div>
+
+<footer>
+  <p>© 2025 Harsh Bajpai</p>
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
 </body>
 </html>
