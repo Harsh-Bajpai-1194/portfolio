@@ -28,7 +28,7 @@ Created on: **30-08-2025**
 ---
 
 ## 🔗 Live Demo
-👉 [View Portfolio](https://sancho1952007.github.io/) *(replace with your link once deployed)*
+👉 [View Portfolio](https://harsh-bajpai-1194.github.io/portfolio/) 
 
 ---
 
